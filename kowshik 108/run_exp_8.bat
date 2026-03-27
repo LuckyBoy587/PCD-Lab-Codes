@@ -1,11 +1,11 @@
-@echo off
-title PCD Exp 8 - Three Address Code - kowshik 108
-cd /d "%~dp0"
+@title PCD Exp 8 - Three Address Code - kowshik 108
+@cd /d "%~dp0"
+@echo on
 
 gcc exp8_three_address_code.c -o exp8
-if errorlevel 1 goto :end
-exp8.exe < exp8_input.txt
+@if errorlevel 1 goto :end
+echo a=b+c/d | exp8.exe
 
-:end
-echo.
-echo Completed Exp 8.
+@:end
+@echo.
+@echo Completed Exp 8.
