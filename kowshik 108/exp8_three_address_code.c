@@ -15,7 +15,6 @@ int main(void) {
     char valstack[128][32];
     int opTop = -1, postLen = 0, valTop = -1, tempNo = 1;
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 8 - Three Address Code Generation\n");
     printf("Enter assignment expression (e.g., a=b+c*d-e): ");
     scanf("%127s", expr);
@@ -81,6 +80,5 @@ int main(void) {
         printf("%s = %s\n", lhs, valstack[valTop]);
     }
 
-    printf("\nLogin Name: kowshik 108\n");
     return 0;
 }

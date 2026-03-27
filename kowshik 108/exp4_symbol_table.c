@@ -14,7 +14,6 @@ int main(void) {
     symtab sa[50];
     int i = 0, line = 0;
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 4 - Symbol Table\n\n");
 
     fp = fopen("exp4_input.txt", "r");
@@ -70,6 +69,5 @@ int main(void) {
     }
 
     fclose(fp);
-    printf("\nLogin Name: kowshik 108\n");
     return 0;
 }

@@ -28,7 +28,6 @@ E:
 %%
 
 int main(void) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 2 - Calculator using LEX and YACC\n");
     printf("Enter Arithmetic Expression:\n");
 
@@ -37,7 +36,6 @@ int main(void) {
     if (flag == 0) {
         printf("Valid Expression\n");
     }
-    printf("Login Name: kowshik 108\n");
     return 0;
 }
 

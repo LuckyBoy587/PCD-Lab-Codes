@@ -177,7 +177,6 @@ static void parse_input(void) {
 }
 
 int main(void) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 5 - Predictive Parser\n");
     printf("Enter productions like E->TR (use @ for epsilon), type quit to stop.\n");
 
@@ -229,6 +228,5 @@ int main(void) {
     }
 
     parse_input();
-    printf("\nLogin Name: kowshik 108\n");
     return 0;
 }

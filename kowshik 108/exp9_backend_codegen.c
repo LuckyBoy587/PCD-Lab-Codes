@@ -20,7 +20,6 @@ int main(void) {
         return 1;
     }
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 9 - Backend Code Generation\n");
     printf("Enter assignment expression (e.g., a=b+c*d): ");
     scanf("%127s", expr);
@@ -106,6 +105,5 @@ int main(void) {
 
     fclose(fp);
     printf("\nAssembly also saved in exp9_out.asm\n");
-    printf("Login Name: kowshik 108\n");
     return 0;
 }

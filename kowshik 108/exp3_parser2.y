@@ -25,10 +25,8 @@ F : '(' E ')'
 %%
 
 int main(void) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 3 (Program 2) - Expression Parser\n");
     yyparse();
-    printf("Login Name: kowshik 108\n");
     return 0;
 }
 

@@ -18,7 +18,6 @@ specialcharacters   [();{}"]
 %%
 
 int main(int argc, char *argv[]) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 1b - Lexical Analyzer using LEX\n");
 
     if (argc != 2) {
@@ -34,7 +33,6 @@ int main(int argc, char *argv[]) {
 
     yylex();
 
-    printf("Login Name: kowshik 108\n");
     fclose(yyin);
     return 0;
 }

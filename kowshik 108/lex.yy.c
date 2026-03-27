@@ -1746,7 +1746,6 @@ void yyfree (void * ptr )
 #line 9 "exp1b_count.l"
 
 int main(int argc, char *argv[]) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 1b - Count words/chars/spaces/lines using LEX\n");
 
     if (argc != 2) {
@@ -1766,7 +1765,6 @@ int main(int argc, char *argv[]) {
     printf("Number of characters = %d\n", c);
     printf("Number of lines = %d\n", l + 1);
     printf("Number of words = %d\n", w);
-    printf("Login Name: kowshik 108\n");
     fclose(yyin);
     return 0;
 }

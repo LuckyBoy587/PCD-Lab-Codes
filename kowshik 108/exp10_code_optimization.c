@@ -11,7 +11,6 @@ int main(void) {
     int i, j, n, z = 0;
     char *p, temp;
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 10 - Code Optimization\n");
 
     printf("\nEnter the number of values: ");
@@ -71,6 +70,5 @@ int main(void) {
         }
     }
 
-    printf("\nLogin Name: kowshik 108\n");
     return 0;
 }

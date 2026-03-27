@@ -21,10 +21,8 @@ L : L ',' S
 %%
 
 int main(void) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 3 (Program 1) - Parser using LEX and YACC\n");
     yyparse();
-    printf("Login Name: kowshik 108\n");
     return 0;
 }
 

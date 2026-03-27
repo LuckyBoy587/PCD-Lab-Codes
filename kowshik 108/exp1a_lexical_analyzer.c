@@ -21,7 +21,6 @@ int main(void) {
     int num[256], tokenvalue = 0;
     int i = 0, k = 0;
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 1a - Lexical Analyzer using C\n\n");
 
     f1 = fopen("exp1a_input.c", "r");
@@ -110,6 +109,5 @@ int main(void) {
         fclose(f4);
     }
 
-    printf("\n\nLogin Name: kowshik 108\n");
     return 0;
 }

@@ -49,7 +49,6 @@ int main(void) {
 
     st.top = 0;
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 6 - Shift Reduce Parser\n");
 
     printf("Enter the number of productions: ");
@@ -95,6 +94,5 @@ int main(void) {
         }
     }
 
-    printf("\nLogin Name: kowshik 108\n");
     return 0;
 }

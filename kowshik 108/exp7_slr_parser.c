@@ -15,7 +15,6 @@ int main(void) {
     int non, not, ni, np;
     int i, j, l, tos, temp1;
 
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 7 - SLR Parser\n");
 
     printf("Enter number of non-terminals: ");
@@ -161,6 +160,5 @@ int main(void) {
         scanf("%d", &ch_flag);
     }
 
-    printf("\nLogin Name: kowshik 108\n");
     return 0;
 }

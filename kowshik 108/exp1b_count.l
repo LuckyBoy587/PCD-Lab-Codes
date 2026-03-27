@@ -8,7 +8,6 @@ int c = 0, w = 0, l = 0, s = 0;
 [^ \t\n]+     { w++; c += yyleng; }
 %%
 int main(int argc, char *argv[]) {
-    printf("Login Name: kowshik 108\n");
     printf("Experiment 1b - Count words/chars/spaces/lines using LEX\n");
 
     if (argc != 2) {
@@ -28,7 +27,6 @@ int main(int argc, char *argv[]) {
     printf("Number of characters = %d\n", c);
     printf("Number of lines = %d\n", l + 1);
     printf("Number of words = %d\n", w);
-    printf("Login Name: kowshik 108\n");
     fclose(yyin);
     return 0;
 }
