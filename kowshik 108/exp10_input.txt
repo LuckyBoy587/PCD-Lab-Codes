@@ -1,0 +1,11 @@
+5
+a
+b+c
+b
+d*e
+c
+b+c
+d
+a+f
+e
+d*e

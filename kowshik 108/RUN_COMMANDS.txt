@@ -1,0 +1,100 @@
+FOLDER: kowshik 108
+LOGIN NAME DISPLAYED IN OUTPUT: kowshik 108
+
+-----------------------------------
+Experiment 1a (C lexical analyzer)
+-----------------------------------
+gcc exp1a_lexical_analyzer.c -o exp1a
+exp1a.exe
+
+-----------------------------------
+Experiment 1b Program 1 (LEX count)
+-----------------------------------
+win_flex exp1b_count.l
+gcc lex.yy.c -o exp1b_count
+exp1b_count.exe exp1b_input.txt
+
+-----------------------------------
+Experiment 1b Program 2 (LEX analyzer)
+-----------------------------------
+win_flex exp1b_lexer.l
+gcc lex.yy.c -o exp1b_lexer
+exp1b_lexer.exe exp1a_input.c
+
+-----------------------------------
+Experiment 2 (LEX + YACC calculator)
+-----------------------------------
+win_bison -dy exp2_calc.y
+win_flex exp2_calc.l
+gcc y.tab.c lex.yy.c -o exp2
+exp2.exe
+
+Sample input expression:
+(10+20)*3-5
+
+-----------------------------------
+Experiment 3 Program 1 (Parser)
+-----------------------------------
+win_bison -dy exp3_parser1.y
+win_flex exp3_parser1.l
+gcc y.tab.c lex.yy.c -o exp3_p1
+exp3_p1.exe
+
+Sample input:
+(a,12,(x,3))
+
+-----------------------------------
+Experiment 3 Program 2 (Expression parser)
+-----------------------------------
+win_bison -dy exp3_parser2.y
+win_flex exp3_parser2.l
+gcc y.tab.c lex.yy.c -o exp3_p2
+exp3_p2.exe
+
+Sample input:
+a+b*4
+
+-----------------------------------
+Experiment 4 (Symbol table in C)
+-----------------------------------
+gcc exp4_symbol_table.c -o exp4
+exp4.exe
+
+NOTE:
+If your bison generates y_tab.c/y_tab.h instead, replace y.tab.c accordingly.
+
+-----------------------------------
+Experiment 5 (Predictive parser)
+-----------------------------------
+gcc exp5_predictive_parser.c -o exp5
+exp5.exe < exp5_input.txt
+
+-----------------------------------
+Experiment 6 (Shift reduce parser)
+-----------------------------------
+gcc exp6_shift_reduce_parser.c -o exp6
+exp6.exe < exp6_input.txt
+
+-----------------------------------
+Experiment 7 (SLR parser)
+-----------------------------------
+gcc exp7_slr_parser.c -o exp7
+exp7.exe < exp7_input.txt
+
+-----------------------------------
+Experiment 8 (Three address code)
+-----------------------------------
+gcc exp8_three_address_code.c -o exp8
+exp8.exe < exp8_input.txt
+
+-----------------------------------
+Experiment 9 (Backend code generation)
+-----------------------------------
+gcc exp9_backend_codegen.c -o exp9
+exp9.exe < exp9_input.txt
+
+-----------------------------------
+Experiment 10 (Code optimization)
+-----------------------------------
+gcc exp10_code_optimization.c -o exp10
+exp10.exe < exp10_input.txt

@@ -1,0 +1,6 @@
+MOV b, R1
+MOV c, R2
+MOV d, R3
+MUL R3, R2
+ADD R2, R1
+MOV R1, a
